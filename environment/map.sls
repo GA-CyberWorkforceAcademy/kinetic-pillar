@@ -32,6 +32,7 @@ map:
     - zun
     - barbican
     - magnum
+    - sahara
   phase6:
     - compute
     - container

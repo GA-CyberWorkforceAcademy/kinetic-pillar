@@ -203,4 +203,20 @@ openstack_services:
       public_endpoint:
         protocol: "https://"
         port: ":9511"
-        path: /v1        
+        path: /v1
+  sahara:
+    configuration:
+      dbs:
+        - sahara
+      internal_endpoint:
+        protocol: "https://"
+        port: ":8386"
+        path: /v1.1/%\(project_id\)s
+      admin_endpoint:
+        protocol: "https://"
+        port: ":8386"
+        path: /v1.1/%\(project_id\)s
+      public_endpoint:
+        protocol: "https://"
+        port: ":8386"
+        path: /v1.1/%\(project_id\)s
