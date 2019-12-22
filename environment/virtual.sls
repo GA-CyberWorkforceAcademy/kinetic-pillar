@@ -100,8 +100,8 @@ virtual:
           bridge: false
           vlan: false
   mysql:
-    count: 1
-    ram: 16384000
+    count: 3
+    ram: 8192000
     cpu: 4
     os: centos7
     disk: 128G
@@ -180,9 +180,9 @@ virtual:
           bridge: false
           vlan: false
   nova:
-    count: 2
-    ram: 16384000
-    cpu: 8
+    count: 3
+    ram: 8192000
+    cpu: 4
     os: ubuntu1804
     disk: 128G
     networks:
@@ -210,9 +210,9 @@ virtual:
           bridge: false
           vlan: false
   horizon:
-    count: 2
-    ram: 16384000
-    cpu: 8
+    count: 3
+    ram: 8192000
+    cpu: 4
     os: centos7
     disk: 128G
     networks:
@@ -226,10 +226,10 @@ virtual:
           vlan: false
   heat:
     count: 2
-    ram: 16384000
-    cpu: 8
+    ram: 8192000
+    cpu: 4
     os: centos7
-    disk: 128G
+    disk: 32G
     networks:
       bridge: false
       vlan: false
@@ -273,7 +273,7 @@ virtual:
           network: sfe
           primary: false
           bridge: false
-          vlan: false          
+          vlan: false
   designate:
     count: 3
     ram: 4096000
@@ -303,13 +303,13 @@ virtual:
           network: management
           primary: true
           bridge: false
-          vlan: false          
+          vlan: false
   swift:
-    count: 1
+    count: 2
     ram: 8192000
     cpu: 4
     os: centos7
-    disk: 64G
+    disk: 32G
     networks:
       bridge: false
       vlan: false
@@ -325,11 +325,11 @@ virtual:
           bridge: false
           vlan: false
   zun:
-    count: 1
+    count: 2
     ram: 8192000
     cpu: 4
     os: centos7
-    disk: 64G
+    disk: 32G
     networks:
       bridge: false
       vlan: false
@@ -340,7 +340,7 @@ virtual:
           bridge: false
           vlan: false
   placement:
-    count: 1
+    count: 2
     ram: 8192000
     cpu: 4
     os: centos7
@@ -410,7 +410,7 @@ virtual:
           bridge: false
           vlan: false
   barbican:
-    count: 1
+    count: 2
     ram: 4096000
     cpu: 2
     os: centos7
@@ -425,7 +425,7 @@ virtual:
           bridge: false
           vlan: false
   magnum:
-    count: 1
+    count: 2
     ram: 4096000
     cpu: 2
     os: centos7
@@ -440,7 +440,7 @@ virtual:
           bridge: false
           vlan: false
   sahara:
-    count: 1
+    count: 2
     ram: 4096000
     cpu: 2
     os: centos7
@@ -455,7 +455,7 @@ virtual:
           bridge: false
           vlan: false
   manila:
-    count: 1
+    count: 2
     ram: 4096000
     cpu: 2
     os: centos7
