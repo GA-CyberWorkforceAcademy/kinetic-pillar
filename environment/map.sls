@@ -17,11 +17,11 @@ map:
     - ovsdb
     - bind
   phase4:
+    - mds
     - storage
     - keystone
     - antora
   phase5:
-    - mds
     - placement
     - glance
     - nova
@@ -30,6 +30,7 @@ map:
     - horizon
     - heat
     - cinder
+    - volume
     - designate
     - swift
     - zun
@@ -37,8 +38,7 @@ map:
     - magnum
     - sahara
     - manila
-    - volume
-  phase6:
     - share
+  phase6:
     - compute
     - container
